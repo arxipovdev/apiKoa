@@ -1,0 +1,38 @@
+{
+  "name": "apikoa",
+  "version": "1.0.0",
+  "description": "api koa",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-modules app/server.js",
+    "dev": "nodemon --exec 'yarn lint && yarn start'",
+    "lint": "eslint app --ext .js",
+    "lint:fix": "eslint --ext .js --fix app"
+  },
+  "type": "module",
+  "author": "arxipovdev",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "config": "^3.2.4",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "keymirror": "^0.1.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.7",
+    "mongoose-unique-validator": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^1.19.4"
+  }
+}

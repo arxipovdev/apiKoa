@@ -1,0 +1,11 @@
+{
+  "extends": "standard",
+  "rules": {
+    "keyword-spacing": ["error", { "overrides": {
+      "if": { "after": false },
+      "for": { "after": false },
+      "while": { "after": false }
+    } }],
+    "space-before-function-paren": ["error", "never"]
+  }
+}
